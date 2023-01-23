@@ -12,10 +12,11 @@ namespace RegexPattern
         public string FirstName = ("^[A-Z]{1}[A-Za-z]{3,}$");
         public string LastName = ("^[A-Z]{1}[A-Za-z]{3,}$");
         public string Email = ("^[A-Za-z]{3,}@[a-z]{3,}.[a-z]{3,}$");
-        public string PhoneNumber = ("^[0-9]{1,10}$");
+        public string PhoneNumber = ("^[0-9]{10}$");
         //public string PassWord = ("^[A-Z0-9a-z@#&*+]{8,}$");
         //public string PassWord = ("^[A-Z]{1,}[A-z0-9a-z@#&*+]{8,}$");
-        public string PassWord = ("^[A-Z]{1,}[0-9A-Za-z!@#$%^&*-]{6,}[0-9]{1,}$");
+        //public string PassWord = ("^[A-Z]{1,}[0-9A-Za-z!@#$%^&*-]{6,}[0-9]{1,}$");
+        public string PassWord = "^[A-Z]{1,}[A-Za-z0-9]{5,}[!@#$%^&*+]{1}[0-9]{1,}$";
 
         public void ValidateFirstName(string firstName)
         {
