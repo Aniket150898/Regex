@@ -36,6 +36,12 @@ namespace RegexPattern
             string Password = Console.ReadLine();
             person.Password(Password);
 
+            //UC9
+            Console.WriteLine("-----------------------------------");
+            Console.WriteLine("Enter The Email_ID: ");
+            string Emails = Console.ReadLine();
+            person.AllEmails(Emails);
+
         }
     }
 }
